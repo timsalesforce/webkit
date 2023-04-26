@@ -1,18 +1,17 @@
-# Salesforce DX Project: Next Steps
+# W-13089063: Signature Success - 44381625 - BP International Ltd - Customer Org - Customer are getting blank page on clicking of the login button in IOS only when lightning locker is Enabled in Org.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Repro
 
-## How Do You Plan to Deploy Your Changes?
+For LWS:
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+1. Clone this repo and deploy to scratch org
+2. Create an Account
+3. In an iOS simulator open the Account
+4. Click on the "click me" button
 
-## Configure Your Salesforce DX Project
+You will see the error message that webkit is undefined.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+For Legacy Locker:
 
-## Read All About It
+Turn off LWS in Session Settings and repeat the steps above.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
